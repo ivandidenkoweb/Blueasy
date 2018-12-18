@@ -1,0 +1,29 @@
+.main-header-top-navigation {
+  &_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  &_item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &_link {
+    padding: 7px 20px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-family: @SegoeUiBold;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @white;
+    opacity: 0.9;
+    &__active,
+    &:hover {
+      border: 2px solid @blue;
+      color: @blue;
+      transition: all 0.8s ease-in;
+    }
+  }
+}
