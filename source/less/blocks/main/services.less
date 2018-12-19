@@ -1,0 +1,55 @@
+.services {
+  padding: 80px 0 77px 0;
+  background-color: @blue;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  &_title {
+    .section-title();
+    margin-bottom: 39px;
+    color: @white;
+    &::after {
+      background-color: @white;
+    }
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &_item {
+    width: 260px;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    &__coffee {
+      background-image: url("../img/services-coffee.png");
+    }
+    &__instant {
+      background-image: url("../img/services-instant.png");
+    }
+    &__serious {
+      background-image: url("../img/services-serious.png");
+    }
+    &__frame {
+      background-image: url("../img/services-frame.png");
+    }
+    &-title {
+      margin-bottom: 15px;
+      font-family: @SegoeUiSemiBold;
+      font-size: 24px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: @white;
+    }
+    &-text {
+      font-family: @SegoeUiSemiBold;
+      font-size: 12px;
+      line-height: 18px;
+      color: @white;
+    }
+  }
+}

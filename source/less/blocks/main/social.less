@@ -1,0 +1,25 @@
+.social {
+  padding: 80px 54px;
+  background-color: @blue;
+  &_title {
+    .section-title();
+    margin-bottom: 16px;
+    color: @white;
+    background: url("../img/social-twitter.png")  no-repeat 100% 0;
+    &::after {
+      background-color: @white;
+    }
+  }
+  &_blockquote {
+    font-family: @SegoeUiLight;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 75px;
+    color: @white;
+    &-link {
+      font-family: @SegoeUiSemiBold;
+      color: @white;
+      text-decoration: none;
+    }
+  }
+}

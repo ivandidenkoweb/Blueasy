@@ -1,0 +1,45 @@
+.just-section {
+  padding: 80px 0;
+  background-color: @grey;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_description {
+    width: 470px;
+  }
+  &_title {
+    .section-title();
+    margin-bottom: 46px;
+    color: @white;
+    &::after {
+      background-color: @white;
+    }
+  }
+  &_text {
+    margin-bottom: 23px;
+    font-family: @SegoeUiRegular;
+    font-size: 14px;
+    line-height: 24px;
+    color: @white;
+    &:last-of-type {
+      margin-bottom: 36px;
+    }
+  }
+  &_link {
+    padding: 12px 41px 10px 35px;
+    border: 2px solid @dark;
+    font-family: @SegoeUiBold;
+    font-size: 14px;
+    line-height: 24px;
+    color: @dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+    &:hover {
+      color: @blue;
+      border-color: @blue;
+    }
+  }
+}

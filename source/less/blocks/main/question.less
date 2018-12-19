@@ -1,0 +1,66 @@
+.question {
+  padding: 100px 0 147px 0;
+  background-image: url("../img/question-bg.jpg");
+  background-size: cover;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_title {
+    .section-title();
+    width: 100%;
+    margin-bottom: 34px;
+    color: @white;
+    &::after {
+      background-color: @white;
+    }
+  }
+  &_text {
+    width: 575px;
+    margin-bottom: 26px;
+    font-family: @SegoeUiRegular;
+    font-size: 14px;
+    line-height: 24px;
+    color: @white;
+  }
+  &_social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 575px;
+    list-style: none;
+  }
+  &_social-item {
+    display: block;
+    width: 64px;
+    height: 64px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &_social-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid @white;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.5s ease-in;
+    &-twitter {
+      background-image: url("../img/social-twitter.png");
+    }
+    &-google-plus {
+      background-image: url("../img/social-google-plus.png");
+    }
+    &-dribble {
+      background-image: url("../img/social-dribble.png");
+    }
+    &-coffee {
+      background-image: url("../img/social-coffee.png");
+    }
+    &:hover {
+      background-color: @blue;
+    }
+  }
+}
